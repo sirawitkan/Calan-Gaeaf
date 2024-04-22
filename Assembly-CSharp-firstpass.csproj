@@ -1,0 +1,1312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2C7A50CA-A778-7E5C-CB04-55B51A628458}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2020_3_16;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;STARTER_ASSETS_PACKAGES_CHECKED;PROBUILDER_EXPERIMENTAL_FEATURES;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.3.16f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Utilities\DraggablePanel.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterJump.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableNumber.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionSetActive.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Messages\SimpleMessage\Mono\SimpleMessageManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionAdventureCamera.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\General\ConditionSceneLoaded.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterMount.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterKeyUp.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Components\StatusEffectsUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\General\ConditionPattern.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnLoad.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\IActionVariablesAssign.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterHoverPressKey.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Conditions\ConditionCharacterBusy.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionTransformRotate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\ClassHelpers\TargetCharacter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\StatusEffectAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Utilities\IQuestAttribute.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterVisible.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\CameraMotorTypeFollow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Managers\ContainerUIManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemTank.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Hooks\HookCamera.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Ragdoll\RagdollUtilities.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Hooks\IHook.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Classes\Stat.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionDestroy.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Trigger\TriggerBehavior.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterCollisionEnter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionMerchantMenu.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Events\GameCreatorStandaloneInputModule.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionChangeTexture.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Actors\ActorSprites.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\Object\ConditionActiveObject.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Conditions\ConditionQuestStatus.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterTriggerExitTag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterDropToConsume.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\GameObjectProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\AttrAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Conditions\ConditionQuestProgress.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\Math\ActionVariableSubtract.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\UI\ActionCanvasGroup.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionMaterialTransitionValue.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Utilities\LocalVariablesUtilities.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Igniters\IgniterQuestStatus.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableString.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseRightClick.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraShakeSustain.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Dialogue\Dialogue.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Application\ActionVideoPlay.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterCursorRaycast.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterPlayerStayTimeout.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\ClassHelpers\TargetPosition.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Components\GameProfileUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionAudioMixerParameter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Tags\Color.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\ListVariables\HelperListVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionInstantiate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionInstantiatePool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Components\DialogueChoiceUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Dialogue\DialogueItemChoiceGroup.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionChangeColor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterDefaultState.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Container\ContainerUIItemPlayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Data\General\DatabaseGeneral.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionDispatchEvent.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\SaveLoad\ConditionHasSaveGame.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionCurrencyMore.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnDisable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionStopMusic.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\Container\IActionContainer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableStateCharacter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionItemsListType.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionEquip.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionDebugStat.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Math\Library\Parser.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Events\EventSystemManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\Container\ActionContainerUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\UI\ActionImageSprite.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Merchant\MerchantUIItemPlayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Application\ActionQualitySettings.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Actions\ActionQuestProgress.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\Igniter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignString.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionSendMessage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Managers\QuestsManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableTxt.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Trigger\TriggerTrack.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseDown.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionListVariableCount.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterUnequipType.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\SpriteProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionReflectionProbes.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionTimeline.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Equipment\PlayerEquipment.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Igniters\IgniterQuestsCompleted.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionListVariableAdd.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Classes\SavesData.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Utilities\TaskAttribute.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionListVariableClear.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterInvisible.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionEnableComponent.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionNearest\ActionNearestInLayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionNearest\ActionNearestTag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableTexture2D.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Classes\StatusEffect.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\UI\InputFieldVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\ScriptableObjects\DatabaseDialogue.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionStopAllSound.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionAffordItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\PlayerCharacter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Interaction\IAction.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnSave.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionDebugFormula.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Inventory\SelectedItemUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterHoverHoldKey.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterPlayerEnter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\Container\ActionContainerRemove.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Attributes.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\UI\ActionChangeText.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraFOV.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Conditions\ConditionStatusEffect.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\UI\ButtonActions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\General\ConditionSimple.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionBlendShape.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionFixedCamera.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Managers\VariablesManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Igniters\IgniterCharacterStep.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Hotbar\HotbarUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\Container\ActionContainerRetrieve.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Application\ActionOpenURL.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\CameraMotorTypeFirstPerson.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Debug\ActionDebugBeep.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\DatabaseStats.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Extra\ScriptTemplates\IgniterTemplate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterCollisionEnterTag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Interaction\IConditionsList.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionListVariableSelect.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Classes\Quests.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableVector2.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Classes\Quest.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterState.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Extra\ScriptTemplates\SimpleConditionTemplate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterRotateTowards.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionConditions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionCancelActions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionChangeStat.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionRestartActions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterHand.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Mono\Shake\CameraShake.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionSyncAttrVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\UI\QuestsGroup.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\ListVariables\HelperGetListVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterRagdoll.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Components\DialogueUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Remember\RememberActive.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Actions\ActionStopDialogue.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Common\CurrencyUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignBool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableSprite.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\StatusEffectsAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInventoryMenu.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Remember\RememberTransform.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Container\ContainerUIItemBox.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionChangeStatUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableBase.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraRotate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Classes\KeysData.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\AttrsAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Providers\DataProviderDefault.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Math\Library\Tokenizer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Merchant\Merchant.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Extra\ScriptTemplates\SimpleActionTemplate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionTrigger.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionPlaySound3D.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterVisibility.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Managers\MerchantUIManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Tags\GlobalTags.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionStatusEffect.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Extra\ScriptTemplates\ConditionTemplate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Debug\ActionDebugBreak.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableState.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterAttachment.cs" />
+    <Compile Include="Assets\Plugins\GameCreatorHub\Actions\ActionRandomWait.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterKeyHold.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterPlayerExit.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\SaveLoad\ActionLoadGame.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionTransformMove.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Logs\DialogueLog.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterTriggerEnter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableColor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesReset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionFollowCamera.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Managers\GlobalVariablesManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Math\Math.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Math\Nodes\Node.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionHeadTrack.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionLootTable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterTeleport.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseUp.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Debug\ActionDebugName.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionInventoryUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\SaveLoad\ActionCurrentProfile.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Hotspots\IHPMonoBehaviour.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInventoryShop.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignSprite.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\Container\ActionContainerDump.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Application\ActionCursor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableSpr.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Classes\ScenesData.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Actions\ActionsAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Interaction\IActionsList.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionHotbarUnbind.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionCurrency.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Classes\Table.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableStateRTC.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInventoryCurrency.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\CameraMotorTypeAdventure.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterWhileKeyDown.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterEquip.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Items\Item.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Components\StatusEffectUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemTarget.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Actions\ActionJournal.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\TimeManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionListVariableIterator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\StringProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Components\ListVariables.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnJump.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterModel.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Conditions\ConditionsBehavior.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableObj.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignVector3.cs" />
+    <Compile Include="Assets\Plugins\AudioSlider.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Hooks\HookPlayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInventoryItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionSelectItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Database\DatabaseQuests.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionUnequip.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\CameraMotorTypeFixed.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Actions\ActionQuestRestart.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Debug\ActionDebugMessage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionHotbarBind.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\UI\ActionChangeFontSize.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionStopSound.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\ScriptableObjects\DatabaseInventory.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Data\Localization\DatabaseLocalization.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\ClassHelpers\TargetGameObject.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\Math\ActionVariableDivide.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableStr.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraDamping.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionTransform.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Interaction\Clause.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterMerchantUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariableRandom.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Input\TouchStick\TouchStickManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterEquipType.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableStateClip.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Math\Nodes\NodeNumber.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionTotalWeight.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionAnimate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionStatModifier.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\UI\QuestUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseExit.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Components\LocalVariables.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseEnter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Hotspots\HPHeadTrack.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterStopGesture.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Inventory\EquipSlotUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterTriggerStayTimeout.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Components\QuestReaction.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\Math\ActionVariableOperationBase.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionChangeAttribute.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableBase.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableBol.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterTriggerExit.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\FormulaAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Logs\DialogueLogUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Pool\PoolManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Container\Container.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Extra\CharacterAnimatorEvents.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Merchant\IMerchantUIItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterCollisionExit.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Messages\SimpleMessage\Actions\ActionSimpleMessageShow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionTimescale.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterTriggerEnterTag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\ColorProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Classes\Attribute.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Providers\IDataProvider.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\CharacterLocomotion.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\ILocomotionSystem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionVolume.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\CameraMotorTypeRailway.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Input\TouchStick\TouchStick.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\BoolProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterUnequipItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Extra\CharacterAnimatorRotation.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseMiddleClick.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionToggleActive.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignColor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionAudioPause.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\CameraMotorTypeTarget.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\Variable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\SerializableDictionaryBase.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\Object\ConditionTag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\Math\ActionVariableMath.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Generic\IGenericBehavior.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterDropItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\Texture2DProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Conditions\ConditionStat.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableGestureClip.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionSyncStatVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Mono\CameraController.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\Remember\RememberBase.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Interaction\ICondition.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionPlayMusic.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\ScriptableObjects\CharacterState.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraChange.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Container\IContainerUIItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionPhysics.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Audio\AudioBuffer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Messages\FloatingMessage\Mono\FloatingMessageManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionNearest\IActionNearest.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionLight.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionListVariableLoop.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionGameObjectInList.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Localization\LocString.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\HelperGlobalVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInstantiateSkin.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\ClassHelpers\TargetDirection.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableGesture.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Conditions\ConditionsTrack.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Conditions\ConditionAttr.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterGesture.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Interaction\Conditions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\ClassHelpers\GlobalID\GlobalID.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Conditions\ConditionFormula.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Dialogue\DialogueItemText.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterStopMoving.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\NumberProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Items\ItemType.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Utilities\MerchantManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Components\AttributeUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Utilities\InventoryManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableVc3.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Scene\ActionLoadScenePlayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\HelperLocalVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Attributes\VariablesAttribute.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInventoryRecipe.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesToggleBool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInventoryDropItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Conditions\ConditionsAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionRailwayCamera.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Singleton.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Conditions\ConditionQuestConditions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariableDebug.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Instances\SOVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Conditions\ConditionCharacterProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionChangeMaterial.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableCol.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\SaveLoad\ActionDeleteProfile.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionWait.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionNearest\ActionNearestComponent.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Instances\MBVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\BaseProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\GameCreatorUtilities.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionMerchantUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterIK.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Merchant\MerchantUIItemSeller.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionRigidbody.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterContainerUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterStateWeight.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\ExpressionEvaluator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\SaveLoad\ActionSaveGame.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Localization\TextLocalized.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionNearest\ActionNearestVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\TreeNode.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Character.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseLeftClick.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterPlayerEnterPressKey.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\InverseKinematics\IToggleIK.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Classes\StatModifier.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraChangeVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionAddComponent.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemFollow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignTexture2D.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Items\ItemHolder.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Actions\ActionsBehavior.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Events\EventDispatchManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\Playables\PlayableGestureRTC.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Effects\GibberishEffect.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterDirection.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Actions\ActionsTrack.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionLookAt.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Scene\ActionLoadScene.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Extra\CharacterAttachments.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\UI\ToggleVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Managers\InventoryUIManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Igniters\IgniterAttrChange.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Equipment\CharacterEquipment.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Tags\Tag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\InverseKinematics\CharacterFootIK.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Conditions\ConditionCharacterCapsule.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\Input\ConditionInputKey.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterCollisionExitTag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Actions\ActionQuest.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterCurrency.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Database\DatabaseVariables.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnMouseEnterUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Inventory\ItemUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterProperies.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\SaveLoad\ActionLoadLastGame.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterFollow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableVector3.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseHoldRight.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Messages\FloatingMessage\ActionFloatingMessage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionActions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignGameObject.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterRaycastMousePosition.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Effects\TypeWriterEffect.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraShakeBurst.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionInventoryInstantiate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\Container\ActionContainerAdd.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionMethods.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\CameraMotorTypeTween.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Feedback\ScriptableObjects\DatabaseFeedback.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Animations\CharacterAnimation.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Actions\ActionQuestsHUD.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignNumber.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\VariableGlobalProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\BaseHelperVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionChangeLanguage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionPlayerMovementInput.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterEquipItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Components\GlobalVariables.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Mono\CameraMotor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Motors\ICameraMotorType.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionAudioSnapshot.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionHasEquipped.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Actions\ActionDialogue.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableNum.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Application\ActionQuit.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Playables\Trigger\TriggerAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Debug\ActionDebugPause.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\StatsAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\Object\ConditionEnabledComponent.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Utilities\QuestEvents.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\UI\ActionGraphicColor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\Input\ConditionInputMouse.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\CharacterAnimator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Data\IDatabase.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableGameObject.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Igniters\IgniterStatChange.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterLootTable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Dialogue\IDialogueItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Receipes\Recipe.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterInventoryUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\UI\ActionFocusOnElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionGatherComponentsByDistance.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionChangeTag.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionGravity.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Igniters\IgniterStefChange.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionTransformRotateTowards.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Interaction\Actions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionVariablesAssignVector2.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionContainerUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\Common\ItemsListUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\ScriptableObjects\StatAsset.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnLand.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterWhileMouseDown.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Marker\NavigationMarker.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Classes\Task.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Math\Nodes\NodeUnary.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemRotation.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Ragdoll\CharacterRagdoll.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Pool\PoolObject.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Conditions\ConditionVariableBool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\Math\ActionVariableAdd.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Actions\ActionDebugAttribute.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionFPSCamera.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterStart.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Classes\Formula.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\Object\ConditionExistsObject.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Interaction\Trigger.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Audio\ActionPlaySound.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Actors\Actor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\SaveLoad\SaveLoadManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableVc2.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterEventReceive.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\CoroutinesManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnEnable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterKeyDown.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Components\Stats.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Utilities\GlobalVariablesUtilities.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Types\VariableGeneric.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterMoveTo.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Extra\ScriptTemplates\ActionTemplate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterInvoke.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Localization\LocalizationManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionRecipe.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Actions\ActionDeselectItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Utilities\SkinmeshManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionTargetCamera.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\InverseKinematics\CharacterHandIK.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\Math\ActionVariableMultiply.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\UI\WeightUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterOnMouseExitUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Utilities\VariablesEvents.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Camera\Actions\ActionCameraCullingMask.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\Vector2Property.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Stats\Mono\Components\StatUI.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\InverseKinematics\CharacterHeadTrack.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\Vector3Property.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseHoldLeft.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\LootTable\LootTable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionComment.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\UI\SliderVectorVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Easing.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Scene\ActionUnloadSceneAsync.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Logs\DialogueLogUIElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\Math\Nodes\NodeBinary.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Mono\Characters\Navigation\LocomotionSystems\LocomotionSystemDirectional.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionGatherTagsByDistance.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\ClassHelpers\UniqueInstanceID.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Hotspots\HPCursor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Hotspots\HPProximity.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\General\ActionStoreRaycastMouse.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Igniters\IgniterMouseHoldMiddle.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\ClassHelpers\VariableProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Conditions\Object\ConditionRigidbody.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Conditions\ConditionContainer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionAnimatorLayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Utilities\CanvasRenderMode.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\ScriptableObjects\Data\Quickstart\DatabaseQuickstart.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\UI\SliderVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\ScriptableObjects\AnimationClipGroup.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Utilities\QuestAttribute.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Dialogue\DialogueItemRoot.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Quests\Mono\Classes\IQuest.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Actions\Objects\ActionExplosion.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Characters\Actions\ActionCharacterDash.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Inventory\Mono\Igniters\IgniterUnequip.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Components\TextVariable.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Dialogue\Mono\Dialogue\DialogueItemChoice.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Variables\Mono\Actions\ActionListVariableRemove.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Core\Mono\Interaction\Hotspot.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\GameCreator\Examples\Utilities\Shaders\WorldCoordDiffuse.shader" />
+    <None Include="Assets\Plugins\GameCreator\Extra\Shaders\ScreenSpaceUI.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\Unity\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="GameCreator.Update.csproj">
+      <Project>{69FD96E8-C318-B25F-A884-6D58A95021F8}</Project>
+      <Name>GameCreator.Update</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.posteffects.editor.csproj">
+      <Project>{B2A60E7C-8E18-FD91-DE7D-FE828434B05A}</Project>
+      <Name>sc.posteffects.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.posteffects.runtime.csproj">
+      <Project>{046C974F-D4FE-10E3-1EB3-2D5EB9D578AB}</Project>
+      <Name>sc.posteffects.runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
